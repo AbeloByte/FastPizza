@@ -1,13 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import SearchOrder from "../features/order/SearchOrder";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import SearchOrder from '../features/order/SearchOrder';
+import User from '../features/user/User';
 
 const Header = () => {
   return (
-    <header>
-      <Link to="/">Fast Pizza Co.</Link>
-      <h2>FastPizza</h2>
+    <header className="flex justify-between bg-yellow-500 px-4 py-3 uppercase sm:px-6">
+      <Link to="/" className="tracking-widest">
+        Fast Pizza Co.
+      </Link>
       <SearchOrder />
+      <User />
     </header>
   );
 };
